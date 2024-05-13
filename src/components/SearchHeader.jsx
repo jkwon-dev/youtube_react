@@ -6,7 +6,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 export default function SearchHeader() {
   const { keyword } = useParams();
   const navigate = useNavigate();
-  const [text, setText] = useState();
+  const [text, setText] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate(`/videos/${text}`);
